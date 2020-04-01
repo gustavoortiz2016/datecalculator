@@ -1,0 +1,26 @@
+{
+  "name": "datecalculator",
+  "version": "1.0.0",
+  "description": "Esta librería contiene una serie de funciones javascript orientadas al calculo de fecha",
+  "main": "src/index.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
+  },
+  "scripts": {
+    "test": "mocha src/index.test.js -W"
+  },
+  "keywords": [
+    "date",
+    "calculator",
+    "fecha",
+    "calculo",
+    "diferencia de dias",
+    "convertir a fecha"
+  ],
+  "author": "Gustavo Ortiz",
+  "license": "MIT"
+}
