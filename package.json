@@ -1,5 +1,5 @@
 {
-  "name": "datecalculator",
+  "name": "g-datecalculator",
   "version": "1.0.0",
   "description": "Esta librería contiene una serie de funciones javascript orientadas al calculo de fecha",
   "main": "src/index.js",
@@ -11,7 +11,8 @@
     "mocha": "^7.1.1"
   },
   "scripts": {
-    "test": "mocha src/index.test.js -W"
+    "test": "mocha src/index.test.js -W",
+    "prepublish": "npm run test"
   },
   "keywords": [
     "date",
@@ -22,5 +23,13 @@
     "convertir a fecha"
   ],
   "author": "Gustavo Ortiz",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoortiz2016/datecalculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gustavoortiz2016/datecalculator/issues"
+  },
+  "homepage": "https://github.com/gustavoortiz2016/datecalculator#readme"
 }

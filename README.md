@@ -23,7 +23,7 @@ Ejemplo:
 
 ### instalacion
 ```
-    npm install datecalculator
+    npm install g-datecalculator
 ```
 ### Uso
 ```
