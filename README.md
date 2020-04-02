@@ -26,8 +26,8 @@ Ejemplo:
     npm install g-datecalculator
 ```
 ### Uso
-```
-var dateCalculator = require('dateCalculator');
+```javascript
+var dateCalculator = require('g-datecalculator');
 var miFecha = dateCalculator.aFecha("2020-03-23T22:25:02.975Z");
 ```
 
