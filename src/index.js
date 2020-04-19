@@ -15,6 +15,24 @@ var aFecha = function (fecha) {
         throw new Error('Ingrese una fecha');
     }
 }
+var hrsDiasLaborales = function (horasCalcular, numeroHorasLaborales, fracciones, aMayor) {
+    var hrc = horasCalcular;
+    var nhl = numeroHorasLaborales;
+    var f = fracciones;
+    var m = aMayor;
+    var r = 0;
+    if (hrc < 1 || nhl < 1 || nhl > 12)
+        throw new Error('Parametros invalidos');
+    r = hrc / nhl;
+    if (f) {
+        return r;
+    } else {
+        if (m)
+            return Math.ceil(r);
+        else
+            return Math.floor(r);
+    }
+}
 var difDiasExcluir = function (fechaInicio, fechaFin, arrExcluir) {
     fechaInicio = aFecha(fechaInicio);
     fechaFin = aFecha(fechaFin);
@@ -36,4 +54,4 @@ var difDiasExcluir = function (fechaInicio, fechaFin, arrExcluir) {
     numDias = numDias - arrRestaNumDias.length;
     return ({ numeroDias: numDias, numeroDiasRestados: arrRestaNumDias.length, arrayDiasRestados: arrRestaNumDias });
 }
-module.exports = { aFecha: aFecha, difDiasExcluir: difDiasExcluir };
+module.exports = { aFecha: aFecha, difDiasExcluir: difDiasExcluir, hrsDiasLaborales: hrsDiasLaborales };

@@ -1,6 +1,6 @@
 {
   "name": "g-datecalculator",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Esta librería contiene una serie de funciones javascript orientadas al calculo de fecha",
   "main": "src/index.js",
   "dependencies": {
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": "mocha src/index.test.js -W",
-    "prepublish": "npm run test"
+    "prepublish": "npm run test",
+    "example":"node ./src/example.js"
   },
   "keywords": [
     "date",

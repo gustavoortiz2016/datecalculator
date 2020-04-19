@@ -39,4 +39,15 @@ describe('dateCalculator', function () {
             done();
         });
     });
+    describe('hrsDiasLaborales', function () {
+        it("horas a calcular 16, horas laborales 8 el valor debe de ser 2", function (done) {
+            expect(dateCalculator.hrsDiasLaborales(16,8,false,true)).to.satisfy(validarDias);
+            function validarDias(respuesta) {
+                console.log('respuesta:', respuesta);
+                return respuesta === 2;
+            }
+            done();
+        });
+        
+    });
 });

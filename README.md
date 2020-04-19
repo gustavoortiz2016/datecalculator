@@ -4,6 +4,7 @@ Esta librería contiene una serie de funciones *javascript* orientadas al calcul
 ### funciones
 * aFecha
 * difDiasExcluir
+* hrsDiasLaborales
 
 ### aFecha
 El objetivo de esta función es convertir cualquier objeto a fecha (convertir siempre y cuando sea posible en caso que no retorna un error).
@@ -19,6 +20,19 @@ Ejemplo:
 **dateCalculator.difDiasExcluir(Date,Date,[Array[Integer]]);**
 ```javascript
     dateCalculator.difDiasExcluir('2020-03-30', '2020-04-06', [6, 0]);
+```
+
+### hrsDiasLaborales
+El objetivo de esta función es convertir horas, a días. En el caso que se desee calcular el numero de días que representan 32 horas, tomando en cuenta que el consta de 8 horas laborales, el numero de días deben de ser 4.
+*Parmetros*:
+* **horasCalcular**: numero de horas que deseamos convertir a días
+* **numeroHorasLaborales**: horas hábiles ejemplo 8
+* **fracciones**: si deseamos que el valor retorne un valor con decimales
+* **aMayor**: si deseamos que se aproxime el valor decimal al valor máximo
+Ejemplo:
+**dateCalculator.hrsDiasLaborales(integer,integer,bool,bool)**
+```javascript
+    dateCalculator.hrsDiasLaborales(4,8,false,true);
 ```
 
 ### instalacion
